@@ -77,14 +77,12 @@ CONFIG_ZMK_BEHAVIOR_LOCAL_ID_TYPE_CRC16=y
 
 CONFIG_ZMK_POINTING=y
 
-# Immediate response (important on 4K)
-CONFIG_ZMK_MOUSE_MOVE_SPEED=2200
 
-# Strong but controllable acceleration
+# Base movement speed (px/s)
+CONFIG_ZMK_MOUSE_MOVE_SPEED=2000
+
+# Acceleration factor
 CONFIG_ZMK_MOUSE_MOVE_ACCELERATION=3
 
-# Fast ramp-up
-CONFIG_ZMK_MOUSE_MOVE_TIME_TO_MAX=120
-
-# High cap to traverse 4K width quickly
-CONFIG_ZMK_MOUSE_MOVE_MAX_SPEED=5500
+# Delay (ms) before acceleration kicks in
+CONFIG_ZMK_MOUSE_MOVE_ACCELERATION_DELAY=40
