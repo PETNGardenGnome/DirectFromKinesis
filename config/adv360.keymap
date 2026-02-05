@@ -39,11 +39,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&none    &none  &none           &none           &none            &none  &none                                                   &mo 3      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB  &none  &none           &kp UP_ARROW    &none            &none  &none                                                   &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none      &none    &none         &none      &to 0      &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&none    &none  &none           &none           &none            &none                      &kp HOME      &kp PG_UP                        &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&tog 2   &none  &none           &kp LEFT        &kp RIGHT               &kp SPACE  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &tog 2
+&none    &none  &none           &none           &none            &none  &none                                                   &mo 3          &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB  &none  &none           &kp UP_ARROW    &none            &none  &none                                                   &none          &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none      &none    &none         &none      &to 0      &none          &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&none    &none  &none           &none           &none            &none                      &kp HOME      &kp PG_UP                            &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&tog 2   &none  &none           &kp LEFT        &kp RIGHT               &kp SPACE  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE         &gresc      &kp KP_N0     &kp KP_DOT     &kp RBKT         &tog 2
             >;
         };
 
