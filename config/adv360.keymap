@@ -74,22 +74,11 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp EQUAL            &kp N1        &kp N2           &kp N3        &kp N4        &kp N5     &kp LS(LA(LC(F22)))                                                              &mo 3          &kp N6     &kp N7      &kp N8       &kp N9       &kp N0          &kp MINUS
-&kp TAB              &kp Q         &kp W            &kp E         &kp R         &ltg 1 T   &kp C_VOL_UP                                                                     &kp LC(LS(M))  &ltg 2 Y   &kp U       &kp I        &kp O        &kp P           &kp BSLH
-&kp ESC              &hm LSHFT A   &hma LALT S      &hm LCTRL D   &hm LGUI F    &hm MEH G  &kp C_VOL_DN         &kp HOME      &kp END         &kp PAGE_UP  &kp PAGE_DOWN    &kp K_MUTE     &hm MEH H  &hm RGUI J  &hm RCTRL K  &hma RALT L  &hm RSHFT SEMI  &kp SQT
-&kp LG(PRINTSCREEN)  &hcp LC(Z) Z  &hcp LC(X) X     &hcp LC(C) C  &hcv LC(V) V  &kp B                                         &to 2           &to 1                                        &kp N      &kp M       &kp COMMA    &kp DOT      &kp FSLH        &bl BL_TOG
-&none                &kp GRAVE     &kp PRINTSCREEN  &kp LEFT      &kp RIGHT                &lt 1 SPACE          &lt 2 DELETE  &kp ESCAPE      &kp TAB      &lt 2 BACKSPACE  &lt 1 ENTER               &kp UP      &kp DOWN     &kp LBKT     &kp RBKT        &none
-            >;
-        };
-
-        nav-fn {
-            display-name = "nav-fn";
-            bindings = <
-&kp F1  &kp F2  &kp F3    &kp F4        &kp F5     &kp F6  &tog 2                                  &mo 3  &kp F7  &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
-&none   &none   &none     &kp UP_ARROW  &none      &none   &none                                   &none  &none   &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none    &none
-&none   &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none   &none  &none      &none  &to 0  &none  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none
-&none   &none   &none     &none         &none      &none                  &none      &none                &none   &mkp MB4        &mkp MB3        &mkp MB5         &none    &none
-&none   &none   &none     &none         &none              &none   &none  &none      &none  &none  &none          &msc SCRL_UP    &msc SCRL_DOWN  &none            &none    &none
+&kp EQUAL  &kp N1        &kp N2           &kp N3        &kp N4        &kp N5     &kp LS(LA(LC(F22)))                                                              &mo 3          &kp N6     &kp N7      &kp N8       &kp N9       &kp N0          &kp MINUS
+&kp TAB    &kp Q         &kp W            &kp E         &kp R         &ltg 2 T   &kp C_VOL_UP                                                                     &kp LC(LS(M))  &ltg 1 Y   &kp U       &kp I        &kp O        &kp P           &kp BSLH
+&kp ESC    &hm LSHFT A   &hma LALT S      &hm LCTRL D   &hm LGUI F    &hm MEH G  &kp C_VOL_DN         &kp HOME      &kp END         &kp PAGE_UP  &kp PAGE_DOWN    &kp K_MUTE     &hm MEH H  &hm RGUI J  &hm RCTRL K  &hma RALT L  &hm RSHFT SEMI  &kp SQT
+&none      &hcp LC(Z) Z  &hcp LC(X) X     &hcp LC(C) C  &hcv LC(V) V  &kp B                                         &to 1           &to 2                                        &kp N      &kp M       &kp COMMA    &kp DOT      &kp FSLH        &none
+&none      &kp GRAVE     &kp PRINTSCREEN  &kp LEFT      &kp RIGHT                &lt 2 SPACE          &lt 1 DELETE  &kp ESCAPE      &kp TAB      &lt 1 BACKSPACE  &lt 2 ENTER               &kp UP      &kp DOWN     &kp LBKT     &kp RBKT        &none
             >;
         };
 
@@ -100,7 +89,18 @@
 &kp TAB  &none  &none           &kp UP_ARROW    &none            &none  &none                                                   &none          &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none      &none    &none         &none      &to 0      &none          &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &none    &none  &none           &none           &none            &none                      &kp HOME      &kp PG_UP                            &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&to 0    &none  &none           &kp LEFT        &kp RIGHT               &kp SPACE  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE         &gresc      &kp KP_N0     &kp KP_DOT     &kp RBKT         &to 0
+&none    &none  &none           &none           &none                   &kp SPACE  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE         &gresc      &kp KP_N0     &kp KP_DOT     &kp RBKT         &none
+            >;
+        };
+
+        nav-fn {
+            display-name = "nav-fn";
+            bindings = <
+&kp F1  &kp F2  &kp F3    &kp F4        &kp F5     &kp F6  &tog 1                                  &mo 3  &kp F7  &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
+&none   &none   &none     &kp UP_ARROW  &none      &none   &none                                   &none  &none   &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none    &none
+&none   &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none   &none  &none      &none  &to 0  &none  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none
+&none   &none   &none     &none         &none      &none                  &none      &none                &none   &mkp MB4        &mkp MB3        &mkp MB5         &none    &none
+&none   &none   &none     &none         &none              &none   &none  &none      &none  &none  &none          &msc SCRL_UP    &msc SCRL_DOWN  &none            &none    &none
             >;
         };
 
